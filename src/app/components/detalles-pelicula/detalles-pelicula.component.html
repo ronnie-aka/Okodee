@@ -1,17 +1,17 @@
 <div class="padre">
     <mat-card>
         <div class="titulo">
-            <mat-card-title> {{pelicula?.['Title']}} </mat-card-title>
+            <mat-card-title style="margin-top: 30px;"> {{pelicula?.['Title']}} </mat-card-title>
         </div>
         <mat-card-content>
-            <img style="margin-top: 20px;"src="{{pelicula?.['Poster']}}">
             <div class="texto">
+                <img class="foto" src="{{pelicula?.['Poster']}}">
                 <p>
                     <b>Año de la película: </b>
                     {{pelicula?.['Year']}}
                 </p>
                 <p>
-                    <b>Idioma original </b>
+                    <b>Idioma original: </b>
                     {{pelicula?.['Language']}}
                 </p>
                 <p>
