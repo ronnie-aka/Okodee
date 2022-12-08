@@ -1,0 +1,7 @@
+<body>
+    <app-buscador class="buscador" (search)="buscarPelis($event)"></app-buscador>
+
+    <app-alerta class="lista" [cerrar]="error"></app-alerta>
+    
+    <app-lista-pelis *ngIf="peliculas.length" [listaPelis]="peliculas" [componenteDetalles]="error"></app-lista-pelis>
+</body>

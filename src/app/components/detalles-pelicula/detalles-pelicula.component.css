@@ -1,0 +1,40 @@
+.padre{
+    position: relative;
+    
+}
+
+mat-card{
+    margin-top: 20px;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+b{
+    font-size: 20px;
+}
+
+p{
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.texto{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+mat-card-title{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.grid{
+    grid-template-columns: repeat(2, 1fr);
+}

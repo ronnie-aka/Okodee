@@ -1,0 +1,11 @@
+<body>
+    <mat-list *ngIf="!componenteDetalles" class="lista">
+        <h3> Películas encontradas: </h3>
+        <mat-list-item *ngFor="let pelicula of peliculas; last as last" (click)="mostrarDetalles(pelicula)">
+            <h4> {{pelicula.Title}}</h4>
+            <mat-divider [inset]="true" *ngIf="!last"></mat-divider>
+        </mat-list-item>
+    </mat-list>
+    
+    <app-detalles-pelicula *ngIf="componenteDetalles" [peliculaId]="pelicula.imdbID"></app-detalles-pelicula>
+</body>

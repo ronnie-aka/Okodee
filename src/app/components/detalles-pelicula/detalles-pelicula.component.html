@@ -1,0 +1,24 @@
+<div class="padre">
+    <mat-card>
+        <div class="titulo">
+            <mat-card-title> {{pelicula?.['Title']}} </mat-card-title>
+        </div>
+        <mat-card-content>
+            <img style="margin-top: 20px;"src="{{pelicula?.['Poster']}}">
+            <div class="texto">
+                <p>
+                    <b>Año de la película: </b>
+                    {{pelicula?.['Year']}}
+                </p>
+                <p>
+                    <b>Idioma original </b>
+                    {{pelicula?.['Language']}}
+                </p>
+                <p>
+                    <b>Trama: </b>
+                    {{pelicula?.['Plot']}}
+                </p>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
